@@ -6,7 +6,7 @@ __licence__ = 'LGPL v3'
 
 
 import pandas as pd
-from selectors.selectors import RangeQuery, UniqueElements, Sample
+from dataselectors.selectors import RangeQuery, UniqueElements, Sample
 from dataselectors.utils import label_rows
 
 """First we define some selectors to use in our Iris dataset example.
