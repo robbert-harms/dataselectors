@@ -1,0 +1,38 @@
+[project]
+name = "dataselectors"
+description = "Data selectors for Pandas dataframes"
+readme = "README.rst"
+version = "0.1.0"
+requires-python = ">=3.12"
+keywords = ["Data selectors", "data selection", "types"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Science/Research",
+    "Natural Language :: English",
+    "License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)",
+    "Programming Language :: Python :: 3.12"
+]
+license = { file="LICENSE" }
+authors = [
+    { name = "Robbert Harms", email = "robbert@xkls.nl" }
+]
+dependencies = [
+    "pandas~=2.2.2",
+    "numpy~=2.1.1"
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest~=8.3.3",
+    "pytest-check~=2.4.1",
+    "pytest-cov~=5.0.0",
+    "pytest-html~=4.1.1",
+    "tox~=4.18.1"
+]
+doc = [
+    "sphinx~=8.0.2"
+]
+
+[build-system]
+requires = ["flit_core >=3.9,<4"]
+build-backend = "flit_core.buildapi"
